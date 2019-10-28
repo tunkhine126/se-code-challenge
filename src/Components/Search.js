@@ -21,6 +21,8 @@ class Search extends Component {
   render() {
     // {console.log(this.state.userSearched)}
     const searched = this.state.userSearched
+    const title = searched.title
+    const details = `#${searched.num} - ${searched.month}/${searched.day}/${searched.year}`
 
     return (
       <div>
@@ -33,8 +35,12 @@ class Search extends Component {
               <Button type="submit" variant="outline-primary" className="searchSubmit">Search</Button>
             </Form>
           </Form.Group>
+        </div>
           {/* // Image */}
-          <img className="searchImage" src={searched.img} title={searched.alt} alt={searched.title} />
+        <div className="searchedComic">
+          {searched ? <h2>{title}</h2> : null}
+          {searched ? <img className="searchImage" src={searched.img} title={searched.alt} alt={searched.title} /> : null}
+          {!details.includes("undefined") ? <p>{details}</p> : null} 
         </div>
       </div>
     )
