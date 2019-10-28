@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Form, FormControl, Button } from "react-bootstrap"
 
+const SearchURL = 'https://xkcd.now.sh/?comic='
 
 class Search extends Component {
 
@@ -9,13 +10,18 @@ class Search extends Component {
   }
 
   fetchSearch = (e) =>{
-    const input = e.target.search.value
     e.preventDefault()
-    console.log(e.target.search.value)
-    fetch(`https://xkcd.now.sh/?comic=${input}`)
-    .then(res => res.json())
-    .then(data => this.setState({ userSearched: data }))
-    .then(e.target.reset())
+    const input = e.target.search.value
+
+    if(!isNaN(input) && input < 2221 ) {
+      fetch(`${SearchURL}${input}`)
+        .then(res => res.json())
+        .then(data => this.setState({ userSearched: data }))
+        .then(e.target.reset())
+    }
+    else {
+      alert(" Please try a number between 1 - 2220")
+    }
   }
 
   render() {
