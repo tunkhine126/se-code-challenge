@@ -5,5 +5,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
 
+.searchForm {
+  margin-left: 3%;
+  width: 30%
 }

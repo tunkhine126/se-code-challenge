@@ -19,8 +19,8 @@ class Home extends Component {
   }
 
   render() {
-    { console.log(this.state.latestComic) }
     const comic = this.state.latestComic
+    
     return (
       <div>
         <img className="latestImage" src={comic.img} title={comic.alt} alt={comic.title} />
