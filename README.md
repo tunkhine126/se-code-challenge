@@ -1,5 +1,5 @@
 
-## New Story Charity: Build a simple web app 
+## New Story Charity: Code Challenge!
 This app will use the XKCD API to display a web comic. The goal is to always have a finished product ready to be improved upon with new features.
 
 This web application uses the XKCD API to build two distinct features.
