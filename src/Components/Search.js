@@ -25,7 +25,6 @@ class Search extends Component {
   }
 
   render() {
-    // {console.log(this.state.userSearched)}
     const searched = this.state.userSearched
     const title = searched.title
     const details = `#${searched.num} - ${searched.month}/${searched.day}/${searched.year}`

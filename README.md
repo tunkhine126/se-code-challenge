@@ -9,9 +9,9 @@ This web application uses the XKCD API to build two distinct features.
 - It also has a "Latest" search page where a user can search for a specific XKCD comic and display it. 
 
 ## Frameworks
- Front end - React
+ Front end - [React](https://reactjs.org)
  
- Styling - Bootstrap and custom CSS
+ Styling - [Bootstrap](https://react-bootstrap.github.io/) and custom CSS
 
 ## The process and challenges
 For this challenge, I tried to be diligent with coding best practices. Usually I would follow a TDD best practices but I had an issue with implementing Cypress off the bat. I believe it was due to particular packages that were missing from the cloned build. Never the less I moved of. 
