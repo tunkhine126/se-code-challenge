@@ -1,6 +1,6 @@
 
-
 .searchForm {
+  margin-top: 20px;
   margin-left: 3%;
   width: 30%
 }
@@ -19,4 +19,10 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.newStoryLogo{
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
 }
