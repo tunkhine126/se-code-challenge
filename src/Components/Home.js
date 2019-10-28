@@ -20,10 +20,14 @@ class Home extends Component {
 
   render() {
     const comic = this.state.latestComic
+    const title = comic.title
+    const details = `#${comic.num} - ${comic.month}/${comic.day}/${comic.year}`
     
     return (
-      <div>
-        <img className="latestImage" src={comic.img} title={comic.alt} alt={comic.title} />
+      <div className="latestComic">
+        { comic ? <h2>{title}</h2> : null }
+        { comic ? <img className="latestImage" src={comic.img} title={comic.alt} alt={comic.title} /> : null } 
+        { !details.includes("undefined") ? <p>{details}</p> : null } 
       </div>
     )
   }

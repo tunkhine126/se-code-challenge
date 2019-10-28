@@ -1,12 +1,5 @@
 
 
-.latestImage {
-  margin-top: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .searchForm {
   margin-left: 3%;
   width: 30%
@@ -17,4 +10,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.latestComic {
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
