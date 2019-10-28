@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Components/Home'
 import Search from './Components/Search'
+import NaviBar from './Components/Navigation'
 
 
 class App extends Component{
@@ -10,6 +11,7 @@ class App extends Component{
     return (
       <Router>
         <div>
+          <NaviBar />
           <Switch>
             <Route exact path="/" render={() => (<Home />)}></Route>
             <Route exact path="/search" render={() => (<Search />)}></Route>
